@@ -3,4 +3,190 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Home - Harpagan">
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">Bezpiecznie. Sprawnie. Kompleksowo.</h1>
+      <p class="hero-description">
+        Rozpoczynamy nową jakość na rynku przeprowadzek w Poznaniu i okolicach!<br>
+        Nasza firma łączy długoletnie doświadczenie zespołu z pasją do perfekcyjnej organizacji, aby każda
+        przeprowadzka była szybka, bezstresowa i bezpieczna. Niezależnie od tego, czy przeprowadzasz się lokalnie,
+        czy planujesz dalszą trasę – jesteśmy gotowi dostosować się do Twoich potrzeb.
+      </p>
+      <a href="/harpagan/contact" class="cta-button">Zadzwoń do nas!</a>
+    </div>
+  </section>
+
+  <section class="features-section">
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-image">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop" alt="Spersonalizowane rozwiązania" />
+        </div>
+        <h2 class="feature-title">Spersonalizowane rozwiązania.</h2>
+        <p class="feature-description">
+          Niezależnie od wielkości czy charakteru zlecenia, traktujemy je z równą uwagą i zaangażowaniem, tworząc rozwiązania skrojone na miarę Twojej sytuacji.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-image">
+          <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop" alt="Zespół, na którym możesz polegać" />
+        </div>
+        <h2 class="feature-title">Zespół, na którym możesz polegać.</h2>
+        <p class="feature-description">
+          Nasz zespół to profesjonaliści, którzy z pasją i zaangażowaniem dbają o każdą przeprowadzkę i o to, by bezpiecznie przewieźć Twoje rzeczy.
+        </p>
+      </div>
+    </div>
+  </section>
 </Layout>
+
+<style>
+  .hero-section {
+    background-color: white;
+    padding: 3rem 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c4a7c;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .hero-description {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background-color: #2c4a7c;
+    color: white;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .cta-button:hover {
+    background-color: #1e3458;
+    transform: translateY(-2px);
+  }
+
+  .features-section {
+    padding: 2rem 2rem 4rem;
+  }
+
+  .features-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+  }
+
+  .feature-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .feature-image {
+    width: 100%;
+    height: 300px;
+    background-color: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .feature-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c4a7c;
+    padding: 1.5rem 1.5rem 1rem;
+    margin: 0;
+  }
+
+  .feature-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.7;
+    padding: 0 1.5rem 1.5rem;
+    margin: 0;
+  }
+
+  /* Mobile responsive styles */
+  @media (max-width: 968px) {
+    .hero-section {
+      padding: 2rem 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-title {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-description {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-button {
+      padding: 0.875rem 2rem;
+      font-size: 1rem;
+    }
+
+    .features-section {
+      padding: 1rem 1rem 2rem;
+    }
+
+    .features-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .feature-image {
+      height: 250px;
+    }
+
+    .feature-title {
+      font-size: 1.3rem;
+      padding: 1.25rem 1.25rem 0.75rem;
+    }
+
+    .feature-description {
+      font-size: 0.95rem;
+      padding: 0 1.25rem 1.25rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
