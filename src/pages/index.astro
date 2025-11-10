@@ -1,5 +1,5 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Home - Harpagan">
@@ -7,10 +7,12 @@ import Layout from '../layouts/Layout.astro';
     <div class="hero-content">
       <h1 class="hero-title">Bezpiecznie. Sprawnie. Kompleksowo.</h1>
       <p class="hero-description">
-        Rozpoczynamy nową jakość na rynku przeprowadzek w Poznaniu i okolicach!<br>
-        Nasza firma łączy długoletnie doświadczenie zespołu z pasją do perfekcyjnej organizacji, aby każda
-        przeprowadzka była szybka, bezstresowa i bezpieczna. Niezależnie od tego, czy przeprowadzasz się lokalnie,
-        czy planujesz dalszą trasę – jesteśmy gotowi dostosować się do Twoich potrzeb.
+        Rozpoczynamy nową jakość na rynku przeprowadzek w Poznaniu i okolicach!<br
+        />
+        Nasza firma łączy długoletnie doświadczenie zespołu z pasją do perfekcyjnej
+        organizacji, aby każda przeprowadzka była szybka, bezstresowa i bezpieczna.
+        Niezależnie od tego, czy przeprowadzasz się lokalnie, czy planujesz dalszą
+        trasę – jesteśmy gotowi dostosować się do Twoich potrzeb.
       </p>
       <a href="/harpagan/contact" class="cta-button">Zadzwoń do nas!</a>
     </div>
@@ -20,21 +22,30 @@ import Layout from '../layouts/Layout.astro';
     <div class="features-grid">
       <div class="feature-card">
         <div class="feature-image">
-          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop" alt="Spersonalizowane rozwiązania" />
+          <img
+            src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop"
+            alt="Spersonalizowane rozwiązania"
+          />
         </div>
         <h2 class="feature-title">Spersonalizowane rozwiązania.</h2>
         <p class="feature-description">
-          Niezależnie od wielkości czy charakteru zlecenia, traktujemy je z równą uwagą i zaangażowaniem, tworząc rozwiązania skrojone na miarę Twojej sytuacji.
+          Niezależnie od wielkości czy charakteru zlecenia, traktujemy je z
+          równą uwagą i zaangażowaniem, tworząc rozwiązania skrojone na miarę
+          Twojej sytuacji.
         </p>
       </div>
 
       <div class="feature-card">
         <div class="feature-image">
-          <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop" alt="Zespół, na którym możesz polegać" />
+          <img
+            src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop"
+            alt="Zespół, na którym możesz polegać"
+          />
         </div>
         <h2 class="feature-title">Zespół, na którym możesz polegać.</h2>
         <p class="feature-description">
-          Nasz zespół to profesjonaliści, którzy z pasją i zaangażowaniem dbają o każdą przeprowadzkę i o to, by bezpiecznie przewieźć Twoje rzeczy.
+          Nasz zespół to profesjonaliści, którzy z pasją i zaangażowaniem dbają
+          o każdą przeprowadzkę i o to, by bezpiecznie przewieźć Twoje rzeczy.
         </p>
       </div>
     </div>
@@ -43,9 +54,10 @@ import Layout from '../layouts/Layout.astro';
 
 <style>
   .hero-section {
-    background-color: white;
     padding: 3rem 2rem;
     margin-bottom: 3rem;
+    background-color: white;
+    border-radius: 24px;
   }
 
   .hero-content {
@@ -57,7 +69,7 @@ import Layout from '../layouts/Layout.astro';
   .hero-title {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #2c4a7c;
+    color: #1d366c;
     margin-bottom: 1.5rem;
     line-height: 1.2;
   }
@@ -71,14 +83,16 @@ import Layout from '../layouts/Layout.astro';
 
   .cta-button {
     display: inline-block;
-    background-color: #2c4a7c;
+    background-color: #1d366c;
     color: white;
     padding: 1rem 2.5rem;
     text-decoration: none;
     border-radius: 4px;
     font-weight: 500;
     font-size: 1.05rem;
-    transition: background-color 0.3s, transform 0.2s;
+    transition:
+      background-color 0.3s,
+      transform 0.2s;
   }
 
   .cta-button:hover {
@@ -99,16 +113,14 @@ import Layout from '../layouts/Layout.astro';
   }
 
   .feature-card {
-    background-color: white;
-    border-radius: 8px;
+    background-color: #f1f2f3;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
 
   .feature-image {
     width: 100%;
     height: 300px;
-    background-color: #e8e8e8;
+    background-color: #f1f2f3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,13 +136,15 @@ import Layout from '../layouts/Layout.astro';
   .feature-title {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #2c4a7c;
+    color: #1d366c;
     padding: 1.5rem 1.5rem 1rem;
     margin: 0;
+    text-align: center;
   }
 
   .feature-description {
     font-size: 1rem;
+    text-align: center;
     color: #555;
     line-height: 1.7;
     padding: 0 1.5rem 1.5rem;
