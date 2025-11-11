@@ -28,21 +28,22 @@ const currentPath = Astro.url.pathname;
           <div class="nav-menu">
             <a
               href="/"
-              class={`nav-link ${currentPath === "/" ? "active" : ""}`}>Home</a
+              class={`nav-link ${currentPath === "/" || currentPath === "" ? "active" : ""}`}
+              >Home</a
             >
             <a
               href="/oferta"
-              class={`nav-link ${currentPath === "/oferta" ? "active" : ""}`}
+              class={`nav-link ${currentPath.endsWith("/oferta") || currentPath.endsWith("/oferta/") ? "active" : ""}`}
               >Oferta</a
             >
             <a
               href="/cennik"
-              class={`nav-link ${currentPath === "/cennik" ? "active" : ""}`}
+              class={`nav-link ${currentPath.endsWith("/cennik") || currentPath.endsWith("/cennik/") ? "active" : ""}`}
               >Cennik</a
             >
             <a
               href="/kontakt"
-              class={`nav-link ${currentPath === "/kontakt" ? "active" : ""}`}
+              class={`nav-link ${currentPath.endsWith("/kontakt") || currentPath.endsWith("/kontakt/") ? "active" : ""}`}
               >Kontakt</a
             >
           </div>
@@ -236,6 +237,11 @@ const currentPath = Astro.url.pathname;
       text-align: center;
       padding: 0.875rem 1.25rem;
       border-bottom: none;
+    }
+
+    .nav-link.active {
+      color: #1d366c;
+      background-color: unset;
     }
 
     .nav-link.active::after {
