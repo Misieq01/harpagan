@@ -21,28 +21,28 @@ const currentPath = Astro.url.pathname;
     <header>
       <nav class="navbar">
         <div class="nav-container">
-          <a href="/harpagan/" class="logo">
-            <img
-              src="/harpagan/logo.svg"
-              alt="Harpagan Logo"
-              class="logo-image"
-            />
+          <a href="/" class="logo">
+            <img src="/logo.svg" alt="Harpagan Logo" class="logo-image" />
           </a>
 
           <div class="nav-menu">
             <a
-              href="/harpagan/"
-              class={`nav-link ${currentPath === "/harpagan/" ? "active" : ""}`}
-              >Home</a
+              href="/"
+              class={`nav-link ${currentPath === "/" ? "active" : ""}`}>Home</a
             >
             <a
-              href="/harpagan/about"
-              class={`nav-link ${currentPath === "/harpagan/about" ? "active" : ""}`}
+              href="/oferta"
+              class={`nav-link ${currentPath === "/oferta" ? "active" : ""}`}
               >Oferta</a
             >
             <a
-              href="/harpagan/contact"
-              class={`nav-link ${currentPath === "/harpagan/contact" ? "active" : ""}`}
+              href="/cennik"
+              class={`nav-link ${currentPath === "/cennik" ? "active" : ""}`}
+              >Cennik</a
+            >
+            <a
+              href="/kontakt"
+              class={`nav-link ${currentPath === "/kontakt" ? "active" : ""}`}
               >Kontakt</a
             >
           </div>
