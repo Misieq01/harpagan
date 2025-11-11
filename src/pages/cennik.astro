@@ -2,240 +2,195 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Oferta - Harpagan">
-  <section class="offer-hero">
-    <div class="decorative-pattern top-left"></div>
-    <div class="decorative-pattern bottom-right"></div>
-    <div class="offer-hero-content">
-      <h1 class="offer-hero-title">
-        Przeprowadzki i przewozy na miarę Twoich oczekiwań.
-      </h1>
-      <p class="offer-hero-subtitle">
-        Zmiana miejsca zamieszkania czy siedziby firmy nie musi być stresująca.
-        Z nami to czysta przyjemność!
-      </p>
+<Layout title="Cennik - Harpagan">
+  <section class="pricing-section">
+    <h1 class="pricing-title">Cennik</h1>
+
+    <div class="table-container">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Usługa</th>
+            <th>Zakres</th>
+            <th>Cena</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rozpoczęcie zlecenia</td>
+            <td
+              >Jednorazowa opłata za podstawienie auta i przygotowanie ekipy</td
+            >
+            <td>100 zł</td>
+          </tr>
+          <tr>
+            <td>Wynajem auta (kontener)</td>
+            <td>Samochód dostawczy z kierowcą – rozliczenie godzinowe</td>
+            <td>100 zł / godz.</td>
+          </tr>
+          <tr>
+            <td>Pomoc pracowników</td>
+            <td>Załadunek, rozładunek, zabezpieczanie mebli</td>
+            <td
+              >40 zł / godz. (1 pracownik)<br />80 zł / godz. (2 pracowników)</td
+            >
+          </tr>
+          <tr>
+            <td>Transport poza Poznań</td>
+            <td>Doliczana opłata za każdy kilometr poza granicami miasta</td>
+            <td>2–4 zł / km</td>
+          </tr>
+          <tr>
+            <td>Materiały do pakowania</td>
+            <td>Kartony, folie, taśmy – na życzenie klienta</td>
+            <td>od 5 zł / szt.</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </section>
 
-  <section class="offer-services">
-    <h2 class="services-title">Co oferujemy?</h2>
-
-    <div class="services-container">
-      <div class="service-block">
-        <div class="service-image">
-          <img
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop"
-            alt="Planowanie przeprowadzki"
-          />
-        </div>
-        <ul class="service-list">
-          <li>Przeprowadzki mieszkalne i firmowe w Poznaniu i okolicach.</li>
-          <li>Indywidualne podejście - brak ceny minimalnej.</li>
-          <li>Transport mebli i rzeczy nawet o dużych gabarytach.</li>
-          <li>Obsługa zarówno krótkich, jak i długich tras.</li>
-          <li>Elastyczne terminy dostosowane do Twojego grafiku.</li>
-          <li>Konkurencyjne ceny i transparentne warunki.</li>
-        </ul>
-      </div>
-
-      <div class="service-block reverse">
-        <ul class="service-list">
-          <li>Indywidualne podejście do każdego klienta.</li>
-          <li>Sprawne, szybkie i bezproblemowe realizacje.</li>
-          <li>Profesjonalne pakowanie i zabezpieczanie mienia.</li>
-          <li>Zespół z doświadczeniem i zaangażowaniem.</li>
-          <li>Otwartość na rozmowę i realizacja również nietypowych zleceń.</li>
-        </ul>
-        <div class="service-image">
-          <img
-            src="https://images.unsplash.com/photo-1577495508326-19a1b3cf65b7?w=800&h=600&fit=crop"
-            alt="Profesjonalna obsługa"
-          />
-        </div>
-      </div>
-    </div>
+    <p class="pricing-note">
+      Skontaktuj się z nami — przygotujemy <strong
+        >bezpłatną i niezobowiązującą</strong
+      > wycenę.
+    </p>
   </section>
 </Layout>
 
 <style>
-  .offer-hero {
-    background-color: #f5f5f5;
-    padding: 4rem 2rem;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .decorative-pattern {
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    opacity: 0.15;
-  }
-
-  .decorative-pattern.top-left {
-    top: 20px;
-    left: 20px;
-    background: radial-gradient(circle, #1d366c 2px, transparent 2px);
-    background-size: 10px 10px;
-  }
-
-  .decorative-pattern.bottom-right {
-    bottom: 20px;
-    right: 20px;
-    background: repeating-linear-gradient(
-      45deg,
-      transparent,
-      transparent 10px,
-      #1d366c 10px,
-      #1d366c 12px
-    );
-  }
-
-  .offer-hero-content {
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-  }
-
-  .offer-hero-title {
-    font-size: 2.2rem;
-    font-weight: bold;
-    color: #1d366c;
-    margin-bottom: 1.5rem;
-    line-height: 1.3;
-  }
-
-  .offer-hero-subtitle {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.7;
-  }
-
-  .offer-services {
-    padding: 3rem 2rem;
+  .pricing-section {
+    padding: 2rem 2rem 4rem;
     max-width: 1200px;
     margin: 0 auto;
   }
 
-  .services-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #1d366c;
-    margin-bottom: 3rem;
-    text-align: left;
+  .pricing-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #4a5f8f;
+    margin-bottom: 2.5rem;
+    text-align: center;
   }
 
-  .services-container {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-  }
-
-  .service-block {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
-  }
-
-  .service-block.reverse {
-    direction: ltr;
-  }
-
-  .service-image {
-    width: 100%;
-    height: 350px;
-    background-color: #f1f2f3;
-    border-radius: 8px;
+  .table-container {
+    background-color: white;
+    border-radius: 0;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   }
 
-  .service-image img {
+  .pricing-table {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    border-collapse: collapse;
+    font-size: 1rem;
   }
 
-  .service-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  .pricing-table thead {
+    background-color: white;
+    color: #333;
+    border-bottom: 1px solid #d0d0d0;
   }
 
-  .service-list li {
+  .pricing-table th {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .pricing-table tbody tr {
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  .pricing-table tbody tr:last-child {
+    border-bottom: none;
+  }
+
+  .pricing-table tbody tr:hover {
+    background-color: #fafafa;
+  }
+
+  .pricing-table td {
+    padding: 1.2rem 1.5rem;
+    color: #555;
+    line-height: 1.6;
+    vertical-align: top;
+  }
+
+  .pricing-table td:first-child {
+    font-weight: 600;
+    color: #333;
+    background-color: white;
+  }
+
+  .pricing-table td:last-child {
+    color: #333;
+    white-space: nowrap;
+  }
+
+  .pricing-note {
+    margin-top: 2.5rem;
+    text-align: center;
     font-size: 1.05rem;
-    color: #1d366c;
-    line-height: 1.8;
-    margin-bottom: 1.2rem;
-    padding-left: 0;
+    color: #555;
+    line-height: 1.6;
   }
 
-  .service-list li:last-child {
-    margin-bottom: 0;
+  .pricing-note strong {
+    color: #1d366c;
+    font-weight: 600;
   }
 
   /* Mobile responsive styles */
   @media (max-width: 968px) {
-    .offer-hero {
-      padding: 3rem 1.5rem;
+    .pricing-section {
+      padding: 1.5rem 1rem 3rem;
     }
 
-    .decorative-pattern {
-      width: 80px;
-      height: 80px;
-    }
-
-    .decorative-pattern.top-left {
-      top: 10px;
-      left: 10px;
-    }
-
-    .decorative-pattern.bottom-right {
-      bottom: 10px;
-      right: 10px;
-    }
-
-    .offer-hero-title {
-      font-size: 1.6rem;
-      margin-bottom: 1rem;
-    }
-
-    .offer-hero-subtitle {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-
-    .offer-services {
-      padding: 2rem 1.5rem;
-    }
-
-    .services-title {
-      font-size: 1.6rem;
+    .pricing-title {
+      font-size: 1.8rem;
       margin-bottom: 2rem;
     }
 
-    .services-container {
-      gap: 3rem;
+    .table-container {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
     }
 
-    .service-block,
-    .service-block.reverse {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
+    .pricing-table {
+      font-size: 0.9rem;
+      min-width: 700px;
     }
 
-    .service-image {
-      height: 250px;
-    }
-
-    .service-list li {
+    .pricing-table th {
+      padding: 0.875rem 1rem;
       font-size: 0.95rem;
-      margin-bottom: 1rem;
+    }
+
+    .pricing-table td {
+      padding: 1rem;
+    }
+
+    .pricing-note {
+      font-size: 0.95rem;
+      margin-top: 2rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .pricing-title {
+      font-size: 1.5rem;
+    }
+
+    .pricing-table {
+      font-size: 0.85rem;
+      min-width: 650px;
+    }
+
+    .pricing-table th,
+    .pricing-table td {
+      padding: 0.875rem;
     }
   }
 </style>
