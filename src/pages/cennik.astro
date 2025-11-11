@@ -38,7 +38,7 @@ import Layout from "../layouts/Layout.astro";
           <tr>
             <td>Transport poza Poznań</td>
             <td>Doliczana opłata za każdy kilometr poza granicami miasta</td>
-            <td>2–4 zł / km</td>
+            <td>2 zł / km</td>
           </tr>
           <tr>
             <td>Materiały do pakowania</td>
@@ -131,7 +131,7 @@ import Layout from "../layouts/Layout.astro";
 
   .pricing-note {
     margin-top: 2.5rem;
-    text-align: center;
+    text-align: start;
     font-size: 1.05rem;
     color: #555;
     line-height: 1.6;
@@ -149,8 +149,8 @@ import Layout from "../layouts/Layout.astro";
     }
 
     .pricing-title {
-      font-size: 1.8rem;
-      margin-bottom: 2rem;
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
     }
 
     .table-container {
@@ -159,38 +159,77 @@ import Layout from "../layouts/Layout.astro";
     }
 
     .pricing-table {
-      font-size: 0.9rem;
-      min-width: 700px;
+      font-size: 0.8rem;
+      min-width: 550px;
     }
 
     .pricing-table th {
-      padding: 0.875rem 1rem;
-      font-size: 0.95rem;
+      padding: 0.75rem 0.75rem;
+      font-size: 0.85rem;
     }
 
     .pricing-table td {
-      padding: 1rem;
+      padding: 0.75rem 0.75rem;
+      line-height: 1.4;
+    }
+
+    .pricing-table td:last-child {
+      white-space: normal;
     }
 
     .pricing-note {
-      font-size: 0.95rem;
-      margin-top: 2rem;
+      font-size: 0.85rem;
+      margin-top: 1.5rem;
     }
   }
 
   @media (max-width: 500px) {
+    .pricing-section {
+      padding: 1rem 0.5rem 2rem;
+    }
+
     .pricing-title {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
+      margin-bottom: 1.25rem;
     }
 
     .pricing-table {
-      font-size: 0.85rem;
-      min-width: 650px;
+      font-size: 0.75rem;
+      min-width: 480px;
     }
 
     .pricing-table th,
     .pricing-table td {
-      padding: 0.875rem;
+      padding: 0.6rem 0.5rem;
+    }
+
+    .pricing-table th {
+      font-size: 0.8rem;
+    }
+
+    .pricing-note {
+      font-size: 0.8rem;
+      margin-top: 1.25rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .pricing-title {
+      font-size: 1.25rem;
+    }
+
+    .pricing-table {
+      font-size: 0.7rem;
+      min-width: 420px;
+    }
+
+    .pricing-table th,
+    .pricing-table td {
+      padding: 0.5rem 0.4rem;
+    }
+
+    .pricing-table th {
+      font-size: 0.75rem;
     }
   }
 </style>
