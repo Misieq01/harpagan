@@ -87,9 +87,9 @@ import Layout from "../layouts/Layout.astro";
   }
 
   .pricing-table thead {
-    background-color: white;
-    color: #333;
-    border-bottom: 1px solid #d0d0d0;
+    background-color: #1d366c;
+    color: white;
+    border-bottom: none;
   }
 
   .pricing-table th {
@@ -97,7 +97,7 @@ import Layout from "../layouts/Layout.astro";
     text-align: left;
     font-weight: 600;
     font-size: 1rem;
-    color: #333;
+    color: white;
   }
 
   .pricing-table tbody tr {
@@ -108,8 +108,8 @@ import Layout from "../layouts/Layout.astro";
     border-bottom: none;
   }
 
-  .pricing-table tbody tr:hover {
-    background-color: #fafafa;
+  .pricing-table tbody tr:nth-child(even) {
+    background-color: #f8faff;
   }
 
   .pricing-table td {
@@ -121,12 +121,12 @@ import Layout from "../layouts/Layout.astro";
 
   .pricing-table td:first-child {
     font-weight: 600;
-    color: #333;
-    background-color: white;
+    color: #1d366c;
   }
 
   .pricing-table td:last-child {
-    color: #333;
+    color: #1d366c;
+    font-weight: 600;
     white-space: nowrap;
   }
 
