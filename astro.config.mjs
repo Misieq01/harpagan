@@ -4,4 +4,5 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   site: 'https://harpagan-przeprowadzki.pl',
   base: '/',
+  prefetch: true,
 });
