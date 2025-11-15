@@ -6,9 +6,9 @@ import Layout from "../layouts/Layout.astro";
   <section class="offer-hero">
     <div class="offer-hero-content">
       <span class="offer-hero-title">
-        Przeprowadzki i przewozy na miarę Twoich oczekiwań. Zmiana miejsca
-        zamieszkania czy siedziby firmy nie musi być stresująca. Z nami to
-        czysta przyjemność!
+        <span>Przeprowadzki i przewozy na miarę Twoich oczekiwań.</span><br class="desktop-br" /> Zmiana miejsca
+        zamieszkania czy siedziby firmy nie musi być stresująca. Z nami to czysta
+        przyjemność!
       </span>
     </div>
   </section>
@@ -135,8 +135,15 @@ import Layout from "../layouts/Layout.astro";
     margin-bottom: 0;
   }
 
+  .desktop-br {
+    display: inline;
+  }
+
   /* Mobile responsive styles */
   @media (max-width: 968px) {
+    .desktop-br {
+      display: none;
+    }
     .offer-hero {
       padding: 4rem 1.5rem;
     }
