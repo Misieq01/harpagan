@@ -8,15 +8,16 @@ interface Props {
 
 const {
   title,
-  description = "Przeprowadzki Poznań – mieszkania, domy, biura. Harpagan oferuje transport i wnoszenie mebli Poznań. Sprawne przeprowadzki w Poznaniu i okolicach – zaufaj lokalnym ekspertom!",
+  description = "Przeprowadzki Poznań – mieszkania, domy, biura. Harpagan oferuje transport i wnoszenie mebli Poznań. Zadzwoń +48 793 380 019",
   keywords = "przeprowadzki Poznań, przeprowadzki mieszkaniowe, przeprowadzki firmowe, transport mebli, transport rzeczy, przeprowadzki lokalne, wynajem auta z kierowcą",
   ogImage = "/logo.png",
 } = Astro.props;
 const currentPath = Astro.url.pathname;
-const siteUrl = Astro.site || "https://harpagan.pl";
+const siteUrl = Astro.site;
 const canonicalURL = new URL(currentPath, siteUrl);
 const metaTitle =
   "Przeprowadzki Poznań – Harpagan | Transport i Wnoszenie Mebli";
+const MAIN_TITLE = "Harpagan - Przeprowadzki Poznań";
 ---
 
 <!doctype html>
@@ -27,7 +28,7 @@ const metaTitle =
     <meta name="generator" content={Astro.generator} />
 
     <!-- Primary Meta Tags -->
-    <title>{title}</title>
+    <title>{MAIN_TITLE}</title>
     <meta name="title" content={metaTitle} />
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords} />
