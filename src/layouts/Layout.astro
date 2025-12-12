@@ -27,6 +27,21 @@ const MAIN_TITLE = "Harpagan - Przeprowadzki Poznań";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
 
+    <!-- Google tag (gtag.js) -->
+    <script
+      type="text/partytown"
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=GTM-PZ2JWVDW"></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "GTM-PZ2JWVDW");
+    </script>
+
     <!-- Primary Meta Tags -->
     <title>{MAIN_TITLE}</title>
     <meta name="title" content={metaTitle} />
