@@ -14,10 +14,7 @@ import Layout from "../layouts/Layout.astro";
         Niezależnie od tego, czy przeprowadzasz się lokalnie, czy planujesz dalszą
         trasę – jesteśmy gotowi dostosować się do Twoich potrzeb.
       </p>
-      <a href="tel:+48793380019" class="cta-button cta-button-mobile"
-        >Zadzwoń do nas!</a
-      >
-      <a href="/kontakt" class="cta-button cta-button-desktop"
+      <a href="/kontakt" id="cta-call-button" class="cta-button"
         >Zadzwoń do nas!</a
       >
     </div>
@@ -101,14 +98,6 @@ import Layout from "../layouts/Layout.astro";
     transform: translateY(-2px);
   }
 
-  .cta-button-mobile {
-    display: none;
-  }
-
-  .cta-button-desktop {
-    display: inline-block;
-  }
-
   .features-section {
     padding: 2rem 2rem 4rem;
   }
@@ -170,17 +159,7 @@ import Layout from "../layouts/Layout.astro";
       display: none;
     }
 
-    .hero-section {
-      padding: 2rem 1rem;
-      margin-bottom: 2rem;
-    }
-
-    .hero-title {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero-description {
+    . .hero-description {
       font-size: 0.95rem;
       line-height: 1.6;
       margin-bottom: 1.5rem;
@@ -221,3 +200,13 @@ import Layout from "../layouts/Layout.astro";
     }
   }
 </style>
+
+<script>
+  // Change button href to tel: on mobile devices
+  if (window.innerWidth <= 968) {
+    const ctaButton = document.getElementById("cta-call-button");
+    if (ctaButton) {
+      ctaButton.href = "tel:+48793380019";
+    }
+  }
+</script>
