@@ -49,6 +49,10 @@ import Layout from "../layouts/Layout.astro";
       </table>
     </div>
 
+    <p class="pricing-footnote">
+      *Opłata za kolejną godzinę obowiązuje w przypadku przekroczenia 20 minut od jej rozpoczęcia
+    </p>
+
     <p class="pricing-note">
       Skontaktuj się z nami — przygotujemy <strong
         >bezpłatną i niezobowiązującą</strong
@@ -130,6 +134,15 @@ import Layout from "../layouts/Layout.astro";
     white-space: nowrap;
   }
 
+  .pricing-footnote {
+    margin-top: 1rem;
+    text-align: start;
+    font-size: 0.85rem;
+    color: #999;
+    font-style: italic;
+    line-height: 1.4;
+  }
+
   .pricing-note {
     margin-top: 2.5rem;
     text-align: start;
@@ -178,6 +191,11 @@ import Layout from "../layouts/Layout.astro";
       white-space: normal;
     }
 
+    .pricing-footnote {
+      font-size: 0.75rem;
+      margin-top: 0.75rem;
+    }
+
     .pricing-note {
       font-size: 0.85rem;
       margin-top: 1.5rem;
@@ -203,7 +221,11 @@ import Layout from "../layouts/Layout.astro";
     .pricing-table td {
       padding: 0.6rem 0.5rem;
     }
+footnote {
+      font-size: 0.7rem;
+    }
 
+    .pricing-
     .pricing-table th {
       font-size: 0.8rem;
     }
