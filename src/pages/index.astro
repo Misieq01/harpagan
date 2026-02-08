@@ -14,7 +14,7 @@ import Layout from "../layouts/Layout.astro";
         Niezależnie od tego, czy przeprowadzasz się lokalnie, czy planujesz dalszą
         trasę – jesteśmy gotowi dostosować się do Twoich potrzeb.
       </p>
-      <a href="tel:+48123456789" class="cta-button cta-button-mobile"
+      <a href="tel:+48793380019" class="cta-button cta-button-mobile"
         >Zadzwoń do nas!</a
       >
       <a href="/kontakt" class="cta-button cta-button-desktop"
@@ -154,15 +154,7 @@ import Layout from "../layouts/Layout.astro";
   .feature-description {
     font-size: 1rem;
     text-align: center;
-    ccta-button-mobile {
-      display: inline-block;
-    }
-
-    .cta-button-desktop {
-      display: none;
-    }
-
-    .olor: #1d366c;
+    color: #1d366c;
     line-height: 1.7;
     padding: 0 1.5rem 1.5rem;
     margin: 0;
@@ -170,6 +162,14 @@ import Layout from "../layouts/Layout.astro";
 
   /* Mobile responsive styles */
   @media (max-width: 968px) {
+    .cta-button-mobile {
+      display: inline-block;
+    }
+
+    .cta-button-desktop {
+      display: none;
+    }
+
     .hero-section {
       padding: 2rem 1rem;
       margin-bottom: 2rem;
